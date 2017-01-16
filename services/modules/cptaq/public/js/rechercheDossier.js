@@ -80,7 +80,7 @@ define(['limites', 'point', 'polygone', 'marqueurs', 'occurence', 'vecteur', 'st
         url += "&epsg=" + codeEPSG.substr(5); //retirer le EPSG:
         //Effectuer l'appel du service et passer la fonction de callback
     //    OpenLayers.loadURL(url, null, null, this.AfficherDossier);      
-        console.log(url);
+//        console.log(url);
         Ext.Ajax.request({
             url : url,
             method: 'GET',

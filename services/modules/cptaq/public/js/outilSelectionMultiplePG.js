@@ -85,7 +85,8 @@ define(['navigateur','panneau','point','marqueurs','outil', 'aide','occurence', 
                     success: function ( result, request ) {
                         that.OutilSelectionMultiplePG(result);
                         var vecteur = that.carte.gestionCouches.obtenirCouchesParTitre('Sélection spatiale')[0];
-                        Recherche.prototype.traiterResultatVecteur.call(that, vecteur);
+//                        Recherche.prototype.traiterResultatVecteur.call(that, vecteur);
+                        new Recherche(this.options).traiterResultatVecteur(vecteur);
                         //vecteur.zoomerOccurences();
 //                        alert(result);
                     },
